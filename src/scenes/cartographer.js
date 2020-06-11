@@ -27,7 +27,7 @@ class Cartographer extends Phaser.Scene {
           this.nextRoomPosition.x + Room.OFFSET,
           this.nextRoomPosition.y + Room.OFFSET,
           1000,
-          Phaser.Math.Easing.Sine.easeInOut
+          "Sine.easeInOut"
         );
       }
     );
