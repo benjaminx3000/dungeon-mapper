@@ -1,5 +1,5 @@
 {
-  "name": "phaser-3-template",
+  "name": "Dungeon Cartographer",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "@babel/plugin-proposal-class-properties": "7.10.1",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": []

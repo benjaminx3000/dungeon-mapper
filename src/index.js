@@ -1,8 +1,7 @@
 import "./styles.css";
 import Phaser from "phaser";
-
-import Boot from "./Boot.js";
-import Play from "./Play.js";
+import MainMenu from "./scenes/mainMenu";
+import Cartographer from "./scenes/cartographer";
 
 const config = {
   type: Phaser.AUTO,
@@ -14,6 +13,7 @@ const config = {
     autoCenter: Phaser.DOM.CENTER_BOTH,
     mode: Phaser.Scale.NONE
   },
+  debug: true,
   backgroundColor: 0x444444,
   pixelArt: true,
   physics: {
@@ -23,7 +23,7 @@ const config = {
       gravity: { y: 200 }
     }
   },
-  scene: [Boot, Play]
+  scene: [MainMenu, Cartographer]
 };
 
 new Phaser.Game(config);
