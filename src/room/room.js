@@ -1,4 +1,6 @@
 import Phaser from "phaser";
+
+const sampleTile = require("./sample-tile.png");
 export default class Room extends Phaser.GameObjects.Group {
   static TILE_SIZE = 32;
   static OFFSET = Room.TILE_SIZE * 1.5;
@@ -49,7 +51,7 @@ export default class Room extends Phaser.GameObjects.Group {
   }
 
   static preload(scene) {
-    scene.load.image("sample-tile", "./assets/sample-tile.png");
+    scene.load.image("sample-tile", sampleTile);
   }
 }
 

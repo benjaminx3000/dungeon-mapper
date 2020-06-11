@@ -8,7 +8,7 @@ class Cartographer extends Phaser.Scene {
 
   constructor() {
     super({
-      key: Cartographer.KEY
+      key: Cartographer.KEY,
     });
   }
 
@@ -27,14 +27,15 @@ class Cartographer extends Phaser.Scene {
           this.nextRoomPosition.x + Room.OFFSET,
           this.nextRoomPosition.y + Room.OFFSET,
           1000,
-          "Sine.easeInOut"
+          "Sine.easeInOut",
+          true
         );
       }
     );
 
     this.nextRoomPosition = {
       x: this.cameras.main.centerX - Room.OFFSET,
-      y: this.cameras.main.centerY - Room.OFFSET
+      y: this.cameras.main.centerY - Room.OFFSET,
     };
 
     // Add the starter room.
